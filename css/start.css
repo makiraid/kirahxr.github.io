@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --font-default:'Montserrat', sans-serif;
+  --secondary-font:'Poppins', sans-serif;
+  --primary-color:#1FA2FF;
+  --secondary-color:#12D8FA;
+  --third-color:#222831;
+  --white-color:#fff;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --bg-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-default);
+}
+
+.container .contentStart {
+  align-items: center;
+  height: 100vh;
+  justify-content: space-evenly;
+  font-family: var(--secondary-font);
+}
+
+.container .contentStart .contentImg img {
+  height: 200px;
+}
+
+.container .contentStart .contentTeks p {
+  font-size: 14px;
+  font-weight: var(--weight-400);
+  max-width: 600px;
+  letter-spacing: 1px;
+}
+
+.container .contentStart .contentTeks .button {
+  margin-top: 40px;
+}
+
+.container .contentStart .contentTeks .button .btn {
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid var(--third-color);
+  background-color: var(--bg-white);
+  color: var(--third-color);
+  width: 300px;
+}
+
+.container .contentStart .contentTeks .button .btn:hover {
+  color: var(--white-color);
+  background-color: var(--third-color);
+  border: 1px solid var(--white-color);
+}
+
+@media (max-width: 720px) {
+  .container .contentStart {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .contentStart .contentTeks {
+    text-align: center;
+  }
+  .container .contentStart .contentTeks .button .btn {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 991px) {
+  .container .contentStart .contentTeks {
+    text-align: center;
+  }
+  .container .contentStart .contentTeks .button .btn {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=start.css.map */
